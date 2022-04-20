@@ -19,10 +19,9 @@ function App() {
   }, [index, people]);
 
   useEffect(() => {
-    let slider = setInterval(() => {
+    setInterval(() => {
       setIndex(index + 1);
     }, 3000);
-    return () => clearInterval(slider);
   }, [index]);
 
   return (
